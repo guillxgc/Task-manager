@@ -4,8 +4,8 @@ import TaskList from './components/TaskList';
 const App = () => {
     return (
         <div>
-            <h1>Task Manager</h1>
-            <TaskList />
+            {/* <h1 className='task-header'>Task Manager</h1> */}
+            <TaskList/>
         </div>
     );
 };

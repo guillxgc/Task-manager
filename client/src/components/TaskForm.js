@@ -23,7 +23,7 @@ const TaskForm = ({ onTaskAdded }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='task-form'>
             <h2>Add a New Task</h2>
             <input 
                 type='text'
@@ -39,14 +39,7 @@ const TaskForm = ({ onTaskAdded }) => {
                 placeholder='Description'
                 required
             />
-            <label>
-                Completed:
-                <input 
-                    type="checkbox" 
-                    checked={completed} 
-                    onChange={(ev) => setCompleted(ev.target.checked)} 
-                />
-            </label>
+
             <button type='submit'>Add Task</button>
         </form>
     );
